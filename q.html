@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>Google search engine look alike</title>
+  <style>
+    body {
+      background-image: url(wallpaperflare.com_wallpaper\ \(1\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+
+    }
+
+    #header-bar {
+      position: fixed;
+      display: block;
+      left: 0;
+      right: 0;
+      line-height: 30px;
+      margin-top: 10px;
+      font-family: "PT Sans", system-ui;
+      font-size: 13px;
+      color: #f3eded;
+      text-shadow: 2px 2px 3px rgb(220, 227, 38);
+    }
+
+    .header-left {
+      padding-left: 15px;
+      float: left;
+      color: #f3eded;
+
+    }
+
+    .header-right {
+      padding-right: 15px;
+      float: right;
+
+    }
+
+    .sign-in-button {
+      font-weight: normal;
+      border: 1px solid #4285f4;
+      border-radius: 6px;
+      background-color: #4683ea;
+      color: rgb(244, 240, 240);
+      padding: 0 10px;
+      line-height: 25px;
+      margin-right: 15px;
+      cursor: pointer;
+
+    }
+
+    #main {
+      text-align: center;
+      padding-top: 90px;
+      font-family: "PT Sans", system-ui;
+      font-size: 60px;
+      color: #f1e9e9;
+      padding-bottom: 0px;
+      text-shadow: 2px 2px 3px rgb(218, 9, 9);
+
+
+    }
+
+    #search-box-outer {
+      display: flex;
+      background-color: #f2f2f2;
+      font: 16px;
+      line-height: 34px;
+      height: 24px;
+      padding: 5px 8px 0 16px;
+      margin: 30px auto;
+      width: 484px;
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.18);
+    }
+
+    .search-box-inner {
+      border: none;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex: 100%;
+      height: 20px;
+      font-size: 12px;
+
+
+    }
+
+    .mic {
+      width: 21px;
+      height: 21px;
+      background-size: 14px;
+      vertical-align: center;
+      padding: 0px 0px 20px 0px;
+      cursor: pointer;
+    }
+
+    input:focus {
+      outline-width: 0;
+    }
+
+    #main-buttons-div {
+      display: block;
+      padding-top: 0px;
+    }
+
+    .search-button {
+      align-items: flex-start;
+      background-color: rgb(243, 235, 235);
+      color: #000000;
+      font-size: 13px;
+      font-weight: bold;
+      height: 32px;
+      margin: 0px 4px;
+      padding: 0px 16px;
+      display: inline-block;
+      border: solid;
+      border-radius: 25px;
+      border-width: 1px;
+      border-color: #1f1c1c;
+
+
+    }
+
+    .search-button:hover {
+      border-style: solid;
+      border-radius: 25px;
+      border-width: 1px;
+      border-color: rgb(198, 198, 198);
+      color: rgb(13, 11, 11);
+      background-color: rgb(248, 248, 248);
+      cursor: pointer;
+
+    }
+
+    #footer-bar {
+      position: fixed;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #6f7c8f;
+      background-color: #030000;
+      font-size: 13px;
+      font-family: arial, sans-serif;
+      line-height: 40px;
+      border-top: 1px solid #e4e4e4;
+    }
+
+    .footer-left {
+      padding-left: 27px;
+      float: left;
+      text-shadow: 2px 2px 3px rgb(218, 9, 9);
+    }
+
+    .footer-right {
+      padding-right: 27px;
+      float: right;
+      text-shadow: 2px 2px 3px rgb(218, 9, 9);
+    }
+
+    .header-footer-link {
+      cursor: pointer;
+      color: #f2f2f2;
+    }
+
+    .ad {
+      width: 400px;
+      height: 250px;
+      display: block;
+      border-radius: 5px;
+      margin: 150px auto 80px auto;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #696565;
+
+    }
+
+    .ad:hover {
+      border-style: solid;
+      border-radius: 5px;
+      border-color: #e4e4e4;
+      cursor: pointer;
+    }
+
+    #sinin {
+      text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header-bar">
+    <span class="header-left header-footer-link">About</span>
+    <span>
+      <a style="text-decoration:none" class="header-left header-footer-link"
+        href="https://chromewebstore.google.com/detail/growth-comes-from-within/iakaimnldecffgfgifklpkmiemeghhbd?pli=1"
+        target="_blank">Store
+      </a>
+    </span>
+    <span>
+      <a style="text-decoration:none" id="sinin" class="header-right sign-in-button"
+        href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F%3Fhl%3Den-GB&ec=GAZAmgQ&hl=en-GB&passive=true&ifkv=ARpgrqd_LwuAjx0MSD2GhWinYDBNpdn4HOJm-pZUhRbPLjetN92fpS8YS5z36aU4ZileLCKyXSvlmQ&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+        target="_blank">sign in</a>
+    </span>
+    <span><a style="text-decoration:none" class="header-right header-footer-link"
+        href="https://www.google.co.in/intl/en-GB/about/products?tab=rh" target="_blank">Options</a></span>
+    <span><a style="text-decoration:none" class="header-right header-footer-link"
+        href="https://www.google.com/imghp?hl=en-GB&tab=ri&ogbl" target="_blank">Images</a></span>
+    <span><a style="text-decoration:none" class="header-right header-footer-link"
+        href="https://mail.google.com/mail/?tab=rm&ogbl" target="_blank">Gmail</a></span>
+  </header>
+
+  <div id="main">
+    <b><a href="https://www.google.com/chrome/what-you-make-of-it/" style="color: #f1e8e8;text-decoration: none;"
+        target="_blank">Google</a></b>
+
+
+    <form action="">
+      <div id="search-box-outer">
+        <input type="text" name="search" placeholder="Search Google or type a URL" class="search-box-inner">
+        <span><img class="mic" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+            alt="voice command button" </span>
+      </div>
+
+      <div id="main-buttons-div">
+        <input type="submit" class="search-button" value="Google Search">
+        <input type="submit" class="search-button" value="I'm Feeling Lucky">
+      </div>
+    </form>
+  </div>
+  <div>
+    <a href="https://www.amazon.in/?&ext_vrnc=hi&tag=googinhydr1-21&ref=pd_sl_7cho2tqa64_e&adgrpid=90234497408&hvpone=&hvptwo=&hvadid=664910750865&hvpos=&hvnetw=g&hvrand=14159837409568644965&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9300861&hvtargid=kwd-842340193361&hydadcr=24584_2344253"
+      target="_blank"><img class="ad"
+        src="https://m.economictimes.com/thumb/msid-94386942,width-1200,height-900,resizemode-4,imgsize-37346/amazon-sale-today-live-offers-best-deals-on-amazon-great-indian-festival-sale.jpg"
+        alt="Amazon Great india sale" </a>
+  </div>
+
+  <div>
+    <a href="https://www.flipkart.com/big-billion-days-store" target="_blank"><img class="ad"
+        src="https://www.91-cdn.com/hub/wp-content/uploads/2023/09/Flipkart-Big-Billion-Days-sale-2023-roundup.png"
+        alt="Flipkart Sale" </a>
+  </div>
+
+  <footer id="footer-bar">
+    <span class="footer-left header-footer-link">Advertising</span>
+    <span class="footer-left header-footer-link">Business</span>
+    <span class="footer-right header-footer-link">Settings
+    </span>
+    <span class="footer-right header-footer-link">Terms</span>
+    <span class="footer-right header-footer-link">Privacy</span>
+  </footer>
+
+</body>
+
+</html>
